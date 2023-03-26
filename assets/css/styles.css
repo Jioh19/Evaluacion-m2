@@ -2,3 +2,14 @@
 img {
     width: 35vw;
 }
+
+body {
+ 
+    margin-left: 10%;
+}
+
+textarea[id = "mensaje"] {
+    height: 150px;
+    width: 200px;
+   
+}

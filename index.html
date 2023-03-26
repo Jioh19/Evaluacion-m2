@@ -27,8 +27,8 @@
             <ul>
                 <li>Nuestros productos</li>
                 <li>Sobre nosotros</li>
-                <li>Comuniquemonos</li>
-                <li>Reserva</li>
+                <a href="#comuniquemonos"><li>Comuniquemonos</li></a>
+                <a href="#reserva"><li>Reserva</li></a>
             </ul>
         </p>
     </nav>
@@ -51,6 +51,61 @@
         <h4>SHOP CERVEZA</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. <br></p>
     </article>
+
+    <div id = "comuniquemonos">
+        <h4>Comuniquemonos</h4>
+        <form action="./comuniquemonos.html" method = "post">
+            <label for="nombre">Nombre</label>
+            <input type="text" name = "nombre" id = "nombre" placeholder = "xxx xxxx" pattern = "^[a-zA-Z]{1,} [a-zA-Z]{1,}$" required> <br> <br>
+
+            <label for="mail">Correo</label>
+            <input type="email" name = "correo" id = "correo" pattern = "^[^@]+@[^@]+\.[a-zA-Z]{2,3}$" placeholder = "xxx@xxx.xxx" required> <BR></BR>
+
+            <label for="telefono">Teléfono</label>
+            <input type="text" name = "telefono" id = "telefono" pattern = "^[0-9]{9}$" placeholder = "xxxxxxxxx" required> <br> <br>
+
+            <label for="motivo">Motivo</label>
+            <input type="text" name = "motivo" id = "motivo" list = "tipo" required> <BR></BR>
+                <datalist id = "tipo">
+                    <option value="Felicitaciones"></option>
+                    <option value="Reclamos"></option>
+                    <option value="Consultas"></option>
+                    <option value="Sugerencias"></option>
+                </datalist>
+            <textarea  name = "mensaje" id = "mensaje" required></textarea><BR></BR>
+
+            <label for="envio mensaje"></label>
+            <button type = "submit">Enviar</button>
+        </form>
+
+    </div>
+    
+    <div id = "reserva">
+        <h4>Reserva</h4>
+        <form action="./reserva.html" method = "post">
+            <label for="nombre">Nombre</label>
+            <input type="text" name = "nombre" id = "nombre" placeholder = "xxx xxxx" pattern = "^[a-zA-Z]{1,} [a-zA-Z]{1,}$" required> <br> <br>
+
+            <label for="mail">Correo</label>
+            <input type="email" name = "correo" id = "correo" pattern = "^[^@]+@[^@]+\.[a-zA-Z]{2,3}$" placeholder = "xxx@xxx.xxx" required> <BR></BR>
+
+            <label for="telefono">Teléfono</label>
+            <input type="text" name = "telefono" id = "telefono" pattern = "^[0-9]{9}$" placeholder = "xxxxxxxxx" required> <br> <br>
+
+            <label for="fecha">Fecha</label>
+            <input type="date" name = "fecha" id = "fecha" required> <BR></BR>
+
+            <label for="hora">Hora</label>
+            <input type="time" name = "hora" id = "hora" required> <BR></BR>
+
+            <label for="asistentes">Cantidad de Asistentes</label>
+            <input type="number" name = "asistentes" id = "asistentes" required> <BR></BR>
+
+            <label for="envio reserva"></label>
+            <button type = "submit">Reservar</button> <BR></BR>
+        </form>
+
+    </div>
 
     <footer>
         <p>
