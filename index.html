@@ -1,116 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
     <link rel="icon" href="./assets/img/n.png">
-    
-    <link rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    integrity="sha384-
-    UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha384-
+    UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 
 
     <title>NIMRODEL Restaurant y Pub</title>
 </head>
+
 <body>
     <header>
-        <img src="./assets/img/n.png" alt="Nimrodel">
+        <img src="./assets/img/n.png" alt="Nimrodel" id="nimrodel">
     </header>
-        
+
+    <!-- Para otra entrega
     <nav>
         <p>
-            <ul>
-                <li>Nuestros productos</li>
-                <li>Sobre nosotros</li>
-                <a href="#comuniquemonos"><li>Comuniquemonos</li></a>
-                <a href="#reserva"><li>Reserva</li></a>
-            </ul>
+        <ul>
+            <li>Nuestros productos</li>
+            <li>Sobre nosotros</li>
+            <a href="#comuniquemonos">
+                <li>Comuniquemonos</li>
+            </a>
+            <a href="#reserva">
+                <li>Reserva</li>
+            </a>
+        </ul>
         </p>
     </nav>
+-->
 
     <section>
-        <h1>Nimrodel Pub Restaurant</h1>
-        <h2>Destacados de la semana</h2>
+        <h1><strong>Nimrodel Pub Restaurant</strong></h1>
+        <h2>Destacados de la semana</h2><br><br>
     </section>
 
     <article>
-        <img src="./assets/img/bebidas.jpg" alt="gaseosas">
+        <img src="./assets/img/bebidas.jpg" alt="gaseosas" class="fotos">
         <h4>GASEOSAS</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. <br></p>
-
-        <img src="./assets/img/tablas.jpg" alt="tablas">
-        <h4>TABLAS</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. <br></p>
-
-        <img src="./assets/img/shop.jpeg" alt="shop">
-        <h4>SHOP CERVEZA</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. <br></p>
+        <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam. <br></p>
     </article>
 
-    <div id = "comuniquemonos">
+    <article>
+        <img src="./assets/img/tablas.jpg" alt="tablas" class="fotos">
+        <h4>TABLAS</h4>
+        <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam. <br></p>
+    </article>
+
+    <article>
+        <img src="./assets/img/shop.jpeg" alt="shop" class="fotos">
+        <h4>SHOP CERVEZA</h4>
+        <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam. </p>
+    </article>
+
+    <div id="comuniquemonos">
         <h4>Comuniquemonos</h4>
-        <form action="./comuniquemonos.html" method = "post">
+        <form action="./comuniquemonos.html" method="post">
             <label for="nombre">Nombre</label>
-            <input type="text" name = "nombre" id = "nombre" placeholder = "xxx xxxx" pattern = "^[a-zA-Z]{1,} [a-zA-Z]{1,}$" required> <br> <br>
+            <input type="text" name="nombre" id="nombre" placeholder="xxx xxxx" pattern="^[a-zA-Z]{1,} [a-zA-Z]{1,}$"
+                required> <br> <br>
 
             <label for="mail">Correo</label>
-            <input type="email" name = "correo" id = "correo" pattern = "^[^@]+@[^@]+\.[a-zA-Z]{2,3}$" placeholder = "xxx@xxx.xxx" required> <BR></BR>
+            <input type="email" name="correo" id="correo" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,3}$"
+                placeholder="xxx@xxx.xxx" required> <BR></BR>
 
             <label for="telefono">Teléfono</label>
-            <input type="text" name = "telefono" id = "telefono" pattern = "^[0-9]{9}$" placeholder = "xxxxxxxxx" required> <br> <br>
+            <input type="text" name="telefono" id="telefono" pattern="^[0-9]{9}$" placeholder="xxxxxxxxx" required> <br>
+            <br>
 
             <label for="motivo">Motivo</label>
-            <input type="text" name = "motivo" id = "motivo" list = "tipo" required> <BR></BR>
-                <datalist id = "tipo">
-                    <option value="Felicitaciones"></option>
-                    <option value="Reclamos"></option>
-                    <option value="Consultas"></option>
-                    <option value="Sugerencias"></option>
-                </datalist>
-            <textarea  name = "mensaje" id = "mensaje" required></textarea><BR></BR>
+            <input type="text" name="motivo" id="motivo" list="tipo" required> <BR></BR>
+            <datalist id="tipo">
+                <option value="Felicitaciones"></option>
+                <option value="Reclamos"></option>
+                <option value="Consultas"></option>
+                <option value="Sugerencias"></option>
+            </datalist>
+            <textarea name="mensaje" id="mensaje" required></textarea><BR></BR>
 
             <label for="envio mensaje"></label>
-            <button type = "submit">Enviar</button>
+            <button type="submit">Enviar</button>
         </form>
 
     </div>
-    
-    <div id = "reserva">
+
+    <div id="reserva">
         <h4>Reserva</h4>
-        <form action="./reserva.html" method = "post">
+        <form action="./reserva.html" method="post">
             <label for="nombre">Nombre</label>
-            <input type="text" name = "nombre" id = "nombre" placeholder = "xxx xxxx" pattern = "^[a-zA-Z]{1,} [a-zA-Z]{1,}$" required> <br> <br>
+            <input type="text" name="nombre" id="nombre" placeholder="xxx xxxx" pattern="^[a-zA-Z]{1,} [a-zA-Z]{1,}$"
+                required> <br> <br>
 
             <label for="mail">Correo</label>
-            <input type="email" name = "correo" id = "correo" pattern = "^[^@]+@[^@]+\.[a-zA-Z]{2,3}$" placeholder = "xxx@xxx.xxx" required> <BR></BR>
+            <input type="email" name="correo" id="correo" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,3}$"
+                placeholder="xxx@xxx.xxx" required> <BR></BR>
 
             <label for="telefono">Teléfono</label>
-            <input type="text" name = "telefono" id = "telefono" pattern = "^[0-9]{9}$" placeholder = "xxxxxxxxx" required> <br> <br>
+            <input type="text" name="telefono" id="telefono" pattern="^[0-9]{9}$" placeholder="xxxxxxxxx" required> <br>
+            <br>
 
             <label for="fecha">Fecha</label>
-            <input type="date" name = "fecha" id = "fecha" required> <BR></BR>
+            <input type="date" name="fecha" id="fecha" required> <BR></BR>
 
             <label for="hora">Hora</label>
-            <input type="time" name = "hora" id = "hora" required> <BR></BR>
+            <input type="time" name="hora" id="hora" required> <BR></BR>
 
             <label for="asistentes">Cantidad de Asistentes</label>
-            <input type="number" name = "asistentes" id = "asistentes" required> <BR></BR>
+            <input type="number" name="asistentes" id="asistentes" required> <BR><br>
 
             <label for="envio reserva"></label>
-            <button type = "submit">Reservar</button> <BR></BR>
+            <button type="submit">Reservar</button> <BR>
         </form>
 
     </div>
 
     <footer>
-        <p>
+        <p id="derechos">
             Todos los derechos reservados <b>®</b>
         </p>
     </footer>
 </body>
+
 </html>
