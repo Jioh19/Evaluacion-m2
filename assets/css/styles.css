@@ -1,69 +1,374 @@
-
-img {
-    height: 15vw;
-    width: 20vw;
+body {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-h1 {
-    font-size: 48px;
-    color:grey;
+header,
+footer {
+    background-image: url("../img/fondo.jpg");
 }
 
 h2 {
     text-decoration: overline;
 }
 
-body {
-        text-align: center;
-}
-
-article {
-
-    padding-left: 2%;
-    padding-right: 2%;
-    max-width: 30%;
-    display:inline-block;
-}
-
-.descripcion{
-    width: 300px;
-
-}
-
-textarea[id = "mensaje"] {
+textarea[id="mensaje"] {
     height: 150px;
     width: 200px;
-   
+}
+/*
+ Pantalla Extra Large (>=1200px)
+*/
+@media(min-width:1200px) {
+
+
+    img {
+        height: 10vw;
+        width: 20vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    header p{
+        margin: 0px;
+    }
+    #nimrodel {
+        height: 8vh;
+        width: 8vh;
+        margin: none;
+        padding: none;
+        
+    }
+
+    header {
+        
+        text-align: left;
+        line-height: 25vh;
+        height: 15vh;
+        width: 100vw;
+        font-size:2vh;
+        margin: 0;
+        background-size: 30%;
+        background-color: black;
+        background-repeat: repeat-x;
+        display: flex;
+        justify-content: flex-start;
+    
+        color: grey;
+    
+    }
+
+    section {
+        width: 100vw;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 8vh;
+        color: grey;
+    }
+
+    h2 {
+        font-size: 3vh;
+    }
+
+    h4 {
+        margin: 0;
+        font-size: 2vh;
+        font-style: bold;
+    }
+
+    article {
+        width: 30vw;
+    }
+
+    .descripcion {
+        font-size: 2vh;
+    }
+
+
+    footer {
+        
+        height: 20vw;
+        width: 100vw;
+        color: white;
+        line-height: 15vw;
+        font-size: 2vw;
+        background-size: 90%;
+    }
+
+    #comuniquemonos, #reserva  {
+       
+        
+        width: 25vw;
+        margin: 2vw 40vw;
+        border-radius: 2%;
+        background-color: #070707;
+    
+        color: white;
+    }
 }
 
-header, footer {
-    background-image: url("../img/fondo.jpg");
+/*
+ Pantalla Large (>=800px)
+*/
+@media(min-width:800px) and (max-width:1200px) {
+
+
+    img {
+        height: 20vw;
+        width: 50vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    header p{
+        margin: 0px;
+    }
+    #nimrodel {
+        height: 3vh;
+        width: 3vh;
+        margin: none;
+        padding: none;
+        
+    }
+
+    header {
+        
+        text-align: left;
+        height: 15vh;
+        width: 100vw;
+        font-size:1.3vh;
+        margin: 0;
+        background-size: 57%;
+        background-color: black;
+        background-repeat: repeat-x;
+      
+        color: grey;
+    
+    }
+
+    section {
+        width: 100vw;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 4vh;
+        color: grey;
+    }
+
+    h2 {
+        font-size: 1.5vh;
+    }
+
+    h4 {
+        margin: 0;
+        font-size: 2vh;
+        font-style: bold;
+    }
+
+    #art1 {
+        width: 45vw;
+    }
+
+    #art1  img{
+        height: 15vw;
+        width: 40vw;
+    }
+
+    #art2  img{
+        height: 15vw;
+        width: 40vw;
+    }
+
+    .descripcion {
+        font-size: 1.2vh;
+    }
+
+    article {
+        width: 50vw;
+    }
+
+    footer {
+        
+        height: 20vw;
+        width: 100vw;
+        color: white;
+        line-height: 15vw;
+        font-size: 2vw;
+        background-size: 110%;
+    }
+
+    #comuniquemonos, #reserva  {
+       
+        width: 55vw;
+        margin: 2vw;
+        border-radius: 2%;
+        background-color: #070707;
+    
+        color: white;
+    }
 }
 
-header {
-    text-align: left;
-    height: 100px;
-    background-size: 30%;
-    background-repeat: repeat-x;
+/*
+ Pantalla mediana (>=400px)
+*/
+@media(min-width:400px) and (max-width:800px) {
+
+    #comuniquemonos, #reserva {
+        display: none;
+    }
+
+    img {
+        height: 20vw;
+        width: 50vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    header p{
+        margin: 0px;
+    }
+    #nimrodel {
+        height: 3vh;
+        width: 3vh;
+        margin: none;
+        padding: none;
+        
+    }
+
+    header {
+        
+        text-align: left;
+        height: 15vh;
+        width: 100vw;
+        font-size:1.3vh;
+        margin: 0;
+        background-size: 57%;
+        background-color: black;
+        background-repeat: repeat-x;
+      
+        color: grey;
+    
+    }
+
+    section {
+        width: 100vw;
+    }
+    h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 4vh;
+        color: grey;
+    }
+
+    h2 {
+        font-size: 1.5vh;
+    }
+
+    h4 {
+        margin: 0;
+        font-size: 1.3vh;
+        font-style: bold;
+    }
+
+    .descripcion {
+        font-size: 1.2vh;
+    }
+
+    article {
+        width: 50vw;
+    }
+
+    footer {
+        
+        height: 20vw;
+        width: 100vw;
+        color: white;
+        line-height: 15vw;
+        font-size: 2vw;
+        background-size: 140%;
+    }
 }
 
-#nimrodel {
-    height: 80px;
-    width: 80px;
+/*
+ Pantalla Small (<400px)
+*/
+@media(max-width:400px) {
+  
+    #comuniquemonos, #reserva {
+        display: none;
+    }
 
+    img {
+        height: 20vw;
+        width: 50vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    header p{
+        margin: 0px;
+    }
+    #nimrodel {
+        height: 3vh;
+        width: 3vh;
+        margin: none;
+        padding: none;
+        
+    }
+
+    header {
+        
+        text-align: left;
+        height: 15vh;
+        width: 100vw;
+        font-size:1.3vh;
+        margin: 0;
+        background-size: 60%;
+        background-color: black;
+        background-repeat: no-repeat;
+      
+        color: grey;
+    
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 4vh;
+        color: grey;
+    }
+
+    h2 {
+        font-size: 1.5vh;
+    }
+
+    h4 {
+        margin: 0;
+        font-size: 1.3vh;
+        font-style: bold;
+    }
+
+    .descripcion {
+        font-size: 1.2vh;
+    }
+
+    article {
+        width: 50vw;
+    }
+
+    footer {
+        
+        height: 20vw;
+        width: 100vw;
+        color: white;
+        line-height: 15vw;
+        font-size: 2vw;
+    }
 }
-
-footer {
-    height: 280px;
-    color:white;
-    line-height: 350px;
-}
-
-#comuniquemonos, #reserva {
-    margin: 5% 40% 5% 40%;
-    border-radius: 2%;
-    background-color: #070707;
-
-    color:white;
-}
-
