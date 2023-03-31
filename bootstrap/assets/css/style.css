@@ -1,0 +1,51 @@
+.navbar {
+    background-image: url(../img/fondo.jpg);
+    background-size:auto 250%;
+}
+
+header h4 {
+    text-decoration: overline;
+}
+
+.formulario h4 {
+    margin: 1vw;
+    width: 50vw;
+}
+
+.card img {
+    height: 25vw;
+
+}
+
+.formulario {
+
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+    width: 50vw;
+    border-radius: 2%;
+    background-color: #070707;
+    color: white;
+}
+
+.carrusel {
+    margin: auto;
+    padding: auto;
+    width: 50vw;
+    justify-content: center;
+}
+
+footer {
+    margin: auto;
+    padding: auto;
+    width: 50vw;
+    justify-content: center;
+    background-image: url(../img/fondo.jpg);
+    background-size: auto 400%;
+    color: white;
+    text-align: center;
+    line-height: 10vh;
+    height: 10vh;
+}
