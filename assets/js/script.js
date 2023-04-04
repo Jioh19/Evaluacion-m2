@@ -83,7 +83,7 @@ $(document).ready(function () {
 
         $(".modal-title").text(titulo);
         $(".modal-img").attr("src", imagen);
-        $(".modal-img").css("width", "70%");
+        $(".modal-img").css("width", "100%");
         $(".modal-text").text(texto);
         $("#myModal").modal('show');
 
