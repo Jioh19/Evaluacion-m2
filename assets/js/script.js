@@ -79,8 +79,6 @@ $(document).ready(function () {
         let imagen = $(this).children(".card-img-top").attr("src");
         let texto = $(this).find(".card-text").text();
 
-        console.log(texto);
-
         $(".modal-title").text(titulo);
         $(".modal-img").attr("src", imagen);
         $(".modal-img").css("width", "100%");
