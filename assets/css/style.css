@@ -53,3 +53,18 @@ footer {
 #comuniquemonos {
     display: block;
 }
+
+.card {
+    text-align: center;
+}
+
+.modal-body{
+    margin: auto;
+    padding: auto;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+
