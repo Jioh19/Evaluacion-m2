@@ -1,66 +1,77 @@
 .navbar {
-    background-image: url(../img/fondo.jpg);
-    background-size:auto 250%;
+  background-image: url(../img/fondo.jpg);
+  background-size: auto 250%;
 }
 
 header h4 {
-    text-decoration: overline;
+  text-decoration: overline;
 }
 
 .formulario h4 {
-    margin: auto;
-    padding: auto;
-    width: 50vw;
+  margin: auto;
+  padding: auto;
+  width: 50vw;
 }
 
 .card img {
-    height: 25vw;
-
+  height: 25vw;
 }
 
 .formulario {
-
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-    padding: auto;
-    width: 50vw;
-    border-radius: 2%;
-    background-color: #070707;
-    color: white;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  padding: auto;
+  width: 50vw;
+  border-radius: 2%;
+  background-color: #070707;
+  color: white;
 }
 
 .carrusel {
-    margin: auto;
-    padding: auto;
-    width: 50vw;
-    justify-content: center;
+  margin: auto;
+  padding: auto;
+  width: 50vw;
+  justify-content: center;
 }
 
 footer {
-    margin: auto;
-    padding: auto;
-    width: 50vw;
-    justify-content: center;
-    background-image: url(../img/fondo.jpg);
-    background-size: auto 400%;
-    color: white;
-    text-align: center;
-    line-height: 10vh;
-    height: 10vh;
+  margin: auto;
+  padding: auto;
+  width: 50vw;
+  justify-content: center;
+  background-image: url(../img/fondo.jpg);
+  background-size: auto 400%;
+  color: white;
+  text-align: center;
+  line-height: 10vh;
+  height: 10vh;
 }
 
 .card {
-    text-align: center;
+  text-align: center;
 }
 
-.modal-body{
-    margin: auto;
-    padding: auto;
-    background-color: black;
-    text-align: center;
-    color: white;
-    width: 100%;
+#modal-body-menu {
+  margin: auto;
+  padding: auto;
+  background-color: black;
+  text-align: center;
+  color: white;
+  width: 100%;
 }
 
+#modal-body-conocenos {
+  margin: auto;
+  padding: 5vw;
+  background-color: black;
+  text-align: center;
+  color: white;
+
+
+}
+
+.imagenConocenos {
+   height: 40vh;
+}
