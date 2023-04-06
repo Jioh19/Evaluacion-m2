@@ -8,7 +8,8 @@ header h4 {
 }
 
 .formulario h4 {
-    margin: 1vw;
+    margin: auto;
+    padding: auto;
     width: 50vw;
 }
 
@@ -48,10 +49,6 @@ footer {
     text-align: center;
     line-height: 10vh;
     height: 10vh;
-}
-
-#comuniquemonos {
-    display: block;
 }
 
 .card {
