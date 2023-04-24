@@ -18,7 +18,7 @@ header h4 {
 }
 
 .card img {
-  height: 25vw;
+  height: min(80%, 25rem);
 }
 
 .formulario {
@@ -43,7 +43,7 @@ header h4 {
 footer {
   margin: auto;
   padding: auto;
-  width: 50vw;
+  width: min(90% ,50rem);
   justify-content: center;
   background-image: url(../img/fondo.jpg);
   background-size: auto 400%;
