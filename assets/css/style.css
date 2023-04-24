@@ -36,7 +36,7 @@ header h4 {
 .carrusel {
   margin: auto;
   padding: auto;
-  width: 50vw;
+  width: min(90%, 50rem);
   justify-content: center;
 }
 
